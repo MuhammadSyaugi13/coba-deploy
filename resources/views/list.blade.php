@@ -17,8 +17,11 @@
         </thead>
         <tbody>
             @foreach ($people as $person)
-                <td>{{$person->name}}</td>
-                <td>{{$person->email}}</td>
+                <tr>
+                    <td>{{$person->name}}</td>
+                    <td>{{$person->email}}</td>
+                </tr>
+
             @endforeach
         </tbody>
     </table>
