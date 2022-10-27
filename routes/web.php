@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,11 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('test', [
         "name" => "syaugi"
+    ]);
+});
+
+Route::get('/database', function () {
+    return view('list', [
+        "people" => User::get()
     ]);
 });
