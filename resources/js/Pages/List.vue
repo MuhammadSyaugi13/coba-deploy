@@ -6,8 +6,8 @@
 
 </script>
 <template>
-    <div class="container">
-        <h1 class="bg-dark mt-10">Table user</h1>
+    <div class="container bg-green-500 mx-auto">
+        <h1 class="mt-10">Table user</h1>
         <table>
             <thead>
             <tr>
